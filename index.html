@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Forms</title>
-</head>
-<body>
-    <div class="main">
-        <div class="left-side"></div>
-        <div class="right-side"></div>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="main">
+        <div class="left-side">
+          <img src="assets/img/png/logo/wiwblack.png" alt="Logo WiW" />
+        </div>
+        <div class="right-side">
+          <div class="form-header">
+            <p>
+              The text I am writing here has no relevance. It is empty in its
+              meaning. As well as the forms you will fill out.
+            </p>
+          </div>
+          <form action="" class="form-section">
+            <div class="form-row">
+              <label for="first-name">First Name</label>
+              <input id="first-name" name="first-name" type="text" />
+              <label for="last-name">Last Name</label>
+              <input id="last-name" name="last-name" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" />
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" />
+              <label for="confirmpwd">Confirm Password</label>
+              <input id="confirmpwd" name="confirmpwd" type="password" />
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
