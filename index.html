@@ -19,26 +19,45 @@
               meaning. As well as the forms you will fill out.
             </p>
           </div>
-          <form action="" class="form-section">
+          <form action="" class="form-section" id="myform">
             <div class="form-row">
-              <label for="first-name">First Name</label>
-              <input id="first-name" name="first-name" type="text" />
-              <label for="last-name">Last Name</label>
-              <input id="last-name" name="last-name" type="text" />
+              <div class="form-row-left">
+                <label for="first-name">First Name</label>
+                <input id="first-name" name="first-name" type="text" />
+              </div>
+              <div class="form-row-right">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" name="last-name" type="text" />
+              </div>
             </div>
             <div class="form-row">
-              <label for="email">E-mail</label>
-              <input id="email" name="email" type="email" />
-              <label for="phone">Phone Number</label>
-              <input id="phone" name="phone" type="text" />
+              <div class="form-row-left">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" />
+              </div>
+              <div class="form-row-right">
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="text" />
+              </div>
             </div>
             <div class="form-row">
-              <label for="password">Password</label>
-              <input id="password" name="password" type="password" />
-              <label for="confirmpwd">Confirm Password</label>
-              <input id="confirmpwd" name="confirmpwd" type="password" />
+              <div class="form-row-left">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" />
+              </div>
+              <div class="form-row-right">
+                <label for="confirmpwd">Confirm Password</label>
+                <input id="confirmpwd" name="confirmpwd" type="password" />
+              </div>
             </div>
           </form>
+          <input
+            type="submit"
+            form="myform"
+            value="Create Account"
+            class="update-button"
+          />
+          <p id="login">Already have an account? Log in</p>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,500&display=swap");
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font-family: "IBM Plex Serif", serif;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .bg {
@@ -24,6 +24,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
 
   display: flex;
   justify-content: center;
@@ -64,21 +65,58 @@ html {
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .right-side p {
   color: white;
-  font-size: 38px;
+  font-size: 32px;
   margin: 40px;
+}
+
+.form-header {
 }
 
 .form-section {
   margin: 40px;
-  padding: 20px;
+  padding: 4px;
   background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .form-row {
   display: flex;
-  margin: 10px;
+  margin: 30px;
+  justify-content: space-between;
+}
+
+.form-row-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-button {
+  align-self: center;
+  background-color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#login {
+  align-self: center;
+  font-size: 20px;
 }
